@@ -27,6 +27,7 @@
       - Remove BSP components
       - Remove compile device header from device description
       - Remove not used conditions
+      - Use permalinks for documentation
     </release>
     <release version="3.1.1" date="2023-07-04">
       Board Support:
@@ -648,12 +649,12 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
       <!-- ************************  Subfamily 'STM32H742'  **************************** -->
       <subFamily DsubFamily="STM32H742">
         <processor Dcore="Cortex-M7" DcoreVersion="r0p1" Dclock="480000000" Dmpu="MPU" Dfpu="DP_FPU" Dendian="Little-endian"/>
-        <book name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
+        <book name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
 
         <debug svd="CMSIS/SVD/STM32H742.svd"/>
         <compile define="STM32H742xx"/>
-        <book name="Documentation/DM00314099.pdf" title="STM32H742, STM32H743/753 and STM32H750 Reference Manual"/>
-        <book name="Documentation/DS12110.pdf" title="STM32H742xI/G STM32H743xI/G Data Sheet"/>
+        <book name="https://www.st.com/resource/en/reference_manual/rm0433-stm32h742-stm32h743753-and-stm32h750-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H742, STM32H743/753 and STM32H750 Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32h743vi.pdf" title="STM32H742xI/G STM32H743xI/G Data Sheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32H742_743_753_750.dbgconf" version="1.1.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -852,9 +853,9 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <debugconfig default="swd" swj="true" clock="400000000" sdf="CMSIS/Debug/STM32H743.sdf"/>
         <debug svd="CMSIS/SVD/STM32H743.svd"/>
         <compile define="STM32H743xx"/>
-        <book name="Documentation/DM00314099.pdf" title="STM32H742, STM32H743/753 and STM32H750 Reference Manual"/>
-        <book name="Documentation/DS12110.pdf" title="STM32H742xI/G STM32H743xI/G Data Sheet"/>
-        <book name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
+        <book name="https://www.st.com/resource/en/reference_manual/rm0433-stm32h742-stm32h743753-and-stm32h750-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H742, STM32H743/753 and STM32H750 Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32h743vi.pdf" title="STM32H742xI/G STM32H743xI/G Data Sheet"/>
+        <book name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
 
         <debugvars configfile="CMSIS/Debug/STM32H742_743_753_750.dbgconf" version="1.1.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -1048,12 +1049,12 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
       <!-- ************************  Subfamily 'STM32H753'  **************************** -->
       <subFamily DsubFamily="STM32H753">
         <processor Dcore="Cortex-M7" DcoreVersion="r0p1" Dclock="480000000" Dmpu="MPU" Dfpu="DP_FPU" Dendian="Little-endian"/>
-        <book name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
+        <book name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
 
         <debug svd="CMSIS/SVD/STM32H753.svd"/>
         <compile define="STM32H753xx"/>
-        <book name="Documentation/DM00314099.pdf" title="STM32H742, STM32H743/753 and STM32H750 Reference Manual"/>
-        <book name="Documentation/DS12117.pdf" title="STM32H753 Data Sheet"/>
+        <book name="https://www.st.com/resource/en/reference_manual/rm0433-stm32h742-stm32h743753-and-stm32h750-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H742, STM32H743/753 and STM32H750 Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32h753vi.pdf" title="STM32H753 Data Sheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32H742_743_753_750.dbgconf" version="1.1.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -1184,12 +1185,12 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
       <!-- ************************  Subfamily 'STM32H750'   *************************** -->
       <subFamily DsubFamily="STM32H750">
         <processor Dcore="Cortex-M7" DcoreVersion="r0p1" Dclock="480000000" Dmpu="MPU" Dfpu="DP_FPU" Dendian="Little-endian"/>
-        <book name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
+        <book name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
 
         <debug svd="CMSIS/SVD/STM32H750.svd"/>
         <compile define="STM32H750xx"/>
-        <book name="Documentation/DM00314099.pdf" title="STM32H742, STM32H743/753 and STM32H750 Reference Manual"/>
-        <book name="Documentation/DS12556.pdf" title="STM32H750VB STM32H750IB STM32H750XB Data Sheet"/>
+        <book name="https://www.st.com/resource/en/reference_manual/rm0433-stm32h742-stm32h743753-and-stm32h750-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H742, STM32H743/753 and STM32H750 Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32h750ib.pdf" title="STM32H750VB STM32H750IB STM32H750XB Data Sheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32H742_743_753_750.dbgconf" version="1.1.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -1295,10 +1296,10 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <compile Pname="CM7" Pdefine="CORE_CM7"/>
         <compile Pname="CM4" Pdefine="CORE_CM4"/>
 
-        <book Pname="CM7" name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
-        <book Pname="CM4" name="Documentation/DUI0553B_cortex_m4_dgug.pdf" title="Cortex-M4 Generic User Guide"/>
-        <book             name="Documentation/DM00176879.pdf" title="STM32H745/755 and STM32H747/757 Reference Manual"/>
-        <book             name="Documentation/DS12923.pdf" title="STM32H745xI/G Data Sheet"/>
+        <book Pname="CM7" name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
+        <book Pname="CM4" name="https://developer.arm.com/documentation/dui0553/latest" title="Cortex-M4 Generic User Guide"/>
+        <book             name="https://www.st.com/resource/en/reference_manual/rm0399-stm32h745755-and-stm32h747757-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H745/755 and STM32H747/757 Reference Manual"/>
+        <book             name="https://www.st.com/resource/en/datasheet/stm32h745zg.pdf" title="STM32H745xI/G Data Sheet"/>
 
         <description>
           The STM32H745 devices are dual processor devices:
@@ -1503,10 +1504,10 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <compile Pname="CM7" define="STM32H755xx" Pdefine="CORE_CM7"/>
         <compile Pname="CM4" define="STM32H755xx" Pdefine="CORE_CM4"/>
 
-        <book Pname="CM7" name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
-        <book Pname="CM4" name="Documentation/DUI0553B_cortex_m4_dgug.pdf" title="Cortex-M4 Generic User Guide"/>
-        <book             name="Documentation/DM00176879.pdf" title="STM32H745/755 and STM32H747/757 Reference Manual"/>
-        <book             name="Documentation/DS12919.pdf" title="STM32H755xI Data Sheet"/>
+        <book Pname="CM7" name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
+        <book Pname="CM4" name="https://developer.arm.com/documentation/dui0553/latest" title="Cortex-M4 Generic User Guide"/>
+        <book             name="https://www.st.com/resource/en/reference_manual/rm0399-stm32h745755-and-stm32h747757-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H745/755 and STM32H747/757 Reference Manual"/>
+        <book             name="https://www.st.com/resource/en/datasheet/stm32h755bi.pdf" title="STM32H755xI Data Sheet"/>
 
         <description>
           The STM32H755 devices are dual processor devices:
@@ -1644,10 +1645,10 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <compile Pname="CM7" Pdefine="CORE_CM7"/>
         <compile Pname="CM4" Pdefine="CORE_CM4"/>
 
-        <book Pname="CM7" name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
-        <book Pname="CM4" name="Documentation/DUI0553B_cortex_m4_dgug.pdf" title="Cortex-M4 Generic User Guide"/>
-        <book             name="Documentation/DM00176879.pdf" title="STM32H745/755 and STM32H747/757 Reference Manual"/>
-        <book             name="Documentation/DS12930.pdf" title="STM32H747xI/G Data Sheet"/>
+        <book Pname="CM7" name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
+        <book Pname="CM4" name="https://developer.arm.com/documentation/dui0553/latest" title="Cortex-M4 Generic User Guide"/>
+        <book             name="https://www.st.com/resource/en/reference_manual/rm0399-stm32h745755-and-stm32h747757-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H745/755 and STM32H747/757 Reference Manual"/>
+        <book             name="https://www.st.com/resource/en/datasheet/stm32h747ag.pdf" title="STM32H747xI/G Data Sheet"/>
 
         <description>
           The STM32H747 devices are dual processor devices:
@@ -1842,10 +1843,10 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <compile Pname="CM7" define="STM32H757xx" Pdefine="CORE_CM7"/>
         <compile Pname="CM4" define="STM32H757xx" Pdefine="CORE_CM4"/>
 
-        <book Pname="CM7" name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
-        <book Pname="CM4" name="Documentation/DUI0553B_cortex_m4_dgug.pdf" title="Cortex-M4 Generic User Guide"/>
-        <book             name="Documentation/DM00176879.pdf" title="STM32H745/755 and STM32H747/757 Reference Manual"/>
-        <book             name="Documentation/DS12931.pdf" title="STM32H757xI Data Sheet"/>
+        <book Pname="CM7" name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
+        <book Pname="CM4" name="https://developer.arm.com/documentation/dui0553/latest" title="Cortex-M4 Generic User Guide"/>
+        <book             name="https://www.st.com/resource/en/reference_manual/rm0399-stm32h745755-and-stm32h747757-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H745/755 and STM32H747/757 Reference Manual"/>
+        <book             name="https://www.st.com/resource/en/datasheet/stm32h757ai.pdf" title="STM32H757xI Data Sheet"/>
 
         <description>
           The STM32H757 devices are dual processor devices:
@@ -1977,9 +1978,9 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <processor Dcore="Cortex-M7" DcoreVersion="r0p1" Dmpu="MPU" Dfpu="DP_FPU" Dendian="Little-endian" Dclock="280000000"/>
         <debug svd="CMSIS/SVD/STM32H7A3.svd"/>
 
-        <book name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
-        <book name="Documentation/DM00463927.pdf" title="STM32H7A3/B3 and STM32H7B0 Value line Reference Manual"/>
-        <book name="Documentation/DS13195.pdf" title="STM32H7A3xI/G Data Sheet"/>
+        <book name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
+        <book name="https://www.st.com/resource/en/reference_manual/rm0455-stm32h7a37b3-and-stm32h7b0-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H7A3/B3 and STM32H7B0 Value line Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32h7a3ai.pdf" title="STM32H7A3xI/G Data Sheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32H7A3_7B3_7B0.dbgconf" version="1.1.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -2339,9 +2340,9 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <processor Dcore="Cortex-M7" DcoreVersion="r0p1" Dmpu="MPU" Dfpu="DP_FPU" Dendian="Little-endian" Dclock="280000000"/>
         <debug svd="CMSIS/SVD/STM32H7B3.svd"/>
 
-        <book name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
-        <book name="Documentation/DM00463927.pdf" title="STM32H7A3/B3 and STM32H7B0 Value line Reference Manual"/>
-        <book name="Documentation/DS13139.pdf" title="STM32H7B3xI/G Data Sheet"/>
+        <book name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
+        <book name="https://www.st.com/resource/en/reference_manual/rm0455-stm32h7a37b3-and-stm32h7b0-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H7A3/B3 and STM32H7B0 Value line Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32h7b3ri.pdf" title="STM32H7B3xI/G Data Sheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32H7A3_7B3_7B0.dbgconf" version="1.1.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -2560,9 +2561,9 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <processor Dcore="Cortex-M7" DcoreVersion="r0p1" Dmpu="MPU" Dfpu="DP_FPU" Dendian="Little-endian" Dclock="280000000"/>
         <debug svd="CMSIS/SVD/STM32H7B0.svd"/>
 
-        <book name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
-        <book name="Documentation/DM00463927.pdf" title="STM32H7A3/B3 and STM32H7B0 Value line Reference Manual"/>
-        <book name="Documentation/DS13196.pdf" title="STM32H7B0xB Data Sheet"/>
+        <book name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
+        <book name="https://www.st.com/resource/en/reference_manual/rm0455-stm32h7a37b3-and-stm32h7b0-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H7A3/B3 and STM32H7B0 Value line Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32h7b0ab.pdf" title="STM32H7B0xB Data Sheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32H7A3_7B3_7B0.dbgconf" version="1.1.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -2685,9 +2686,9 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <processor Dcore="Cortex-M7" DcoreVersion="r0p1" Dmpu="MPU" Dfpu="DP_FPU" Dendian="Little-endian" Dclock="550000000"/>
         <debug svd="CMSIS/SVD/STM32H723.svd"/>
 
-        <book name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
-        <book name="Documentation/RM0468.pdf" title="STM32H723/733, STM32H725/735 and STM32H730 Value line Reference Manual"/>
-        <book name="Documentation/DS13313.pdf" title="STM32H723VE STM32H723VG STM32H723ZE STM32H723ZG Data Sheet"/>
+        <book name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
+        <book name="https://www.st.com/resource/en/reference_manual/rm0468-stm32h723733-stm32h725735-and-stm32h730-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H723/733, STM32H725/735 and STM32H730 Value line Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32h723zg.pdf" title="STM32H723VE STM32H723VG STM32H723ZE STM32H723ZG Data Sheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32H723_725_730_733_735.dbgconf" version="1.0.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -2828,9 +2829,9 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <processor Dcore="Cortex-M7" DcoreVersion="r0p1" Dmpu="MPU" Dfpu="DP_FPU" Dendian="Little-endian" Dclock="550000000"/>
         <debug svd="CMSIS/SVD/STM32H733.svd"/>
 
-        <book name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
-        <book name="Documentation/RM0468.pdf" title="STM32H723/733, STM32H725/735 and STM32H730 Value line Reference Manual"/>
-        <book name="Documentation/DS13314.pdf" title="STM32H733VG STM32H733ZG Data Sheet"/>
+        <book name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
+        <book name="https://www.st.com/resource/en/reference_manual/rm0468-stm32h723733-stm32h725735-and-stm32h730-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H723/733, STM32H725/735 and STM32H730 Value line Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32h733vg.pdf" title="STM32H733VG STM32H733ZG Data Sheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32H723_725_730_733_735.dbgconf" version="1.0.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -2937,9 +2938,9 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <processor Dcore="Cortex-M7" DcoreVersion="r0p1" Dmpu="MPU" Dfpu="DP_FPU" Dendian="Little-endian" Dclock="550000000"/>
         <debug svd="CMSIS/SVD/STM32H725.svd"/>
 
-        <book name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
-        <book name="Documentation/RM0468.pdf" title="STM32H723/733, STM32H725/735 and STM32H730 Value line Reference Manual"/>
-        <book name="Documentation/DS13311.pdf" title="STM32H725xE/G Data Sheet"/>
+        <book name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
+        <book name="https://www.st.com/resource/en/reference_manual/rm0468-stm32h723733-stm32h725735-and-stm32h730-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H723/733, STM32H725/735 and STM32H730 Value line Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32h725ae.pdf" title="STM32H725xE/G Data Sheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32H723_725_730_733_735.dbgconf" version="1.0.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -3147,9 +3148,9 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <processor Dcore="Cortex-M7" DcoreVersion="r0p1" Dmpu="MPU" Dfpu="DP_FPU" Dendian="Little-endian" Dclock="550000000"/>
         <debug svd="CMSIS/SVD/STM32H735.svd"/>
 
-        <book name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
-        <book name="Documentation/RM0468.pdf" title="STM32H723/733, STM32H725/735 and STM32H730 Value line Reference Manual"/>
-        <book name="Documentation/DS13312.pdf" title="STM32H735xG Data Sheet"/>
+        <book name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
+        <book name="https://www.st.com/resource/en/reference_manual/rm0468-stm32h723733-stm32h725735-and-stm32h730-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H723/733, STM32H725/735 and STM32H730 Value line Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32h735zg.pdf" title="STM32H735xG Data Sheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32H723_725_730_733_735.dbgconf" version="1.0.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
@@ -3294,9 +3295,9 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <processor Dcore="Cortex-M7" DcoreVersion="r0p1" Dmpu="MPU" Dfpu="DP_FPU" Dendian="Little-endian" Dclock="550000000"/>
         <debug svd="CMSIS/SVD/STM32H730.svd"/>
 
-        <book name="Documentation/DUI0646B_cortex_m7_dgug.pdf" title="Cortex-M7 Generic User Guide"/>
-        <book name="Documentation/RM0468.pdf" title="STM32H723/733, STM32H725/735 and STM32H730 Value line Reference Manual"/>
-        <book name="Documentation/DS13315.pdf" title="STM32H730AB STM32H730IB STM32H730VB STM32H730ZB Data Sheet"/>
+        <book name="https://developer.arm.com/documentation/dui0646/latest" title="Cortex-M7 Generic User Guide"/>
+        <book name="https://www.st.com/resource/en/reference_manual/rm0468-stm32h723733-stm32h725735-and-stm32h730-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32H723/733, STM32H725/735 and STM32H730 Value line Reference Manual"/>
+        <book name="https://www.st.com/resource/en/datasheet/stm32h730ab.pdf" title="STM32H730AB STM32H730IB STM32H730VB STM32H730ZB Data Sheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32H723_725_730_733_735.dbgconf" version="1.0.0">
           // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
