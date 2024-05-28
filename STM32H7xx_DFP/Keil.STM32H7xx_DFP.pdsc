@@ -3482,6 +3482,16 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <file category="source" name="CMSIS/Driver/FDCAN_STM32H7xx.c"/>
       </files>
     </component>
+    <component Cclass="CMSIS Driver" Cgroup="GPIO"          Capiversion="1.0.0" Cversion="1.0.0" condition="STM32H7 CMSIS CubeMX">
+      <description>GPIO Driver for STM32H7 Series</description>
+      <RTE_Components_h>  <!-- the following content goes into file 'RTE_Components.h' -->
+        #define RTE_Drivers_GPIO0               /* Driver GPIO0 */
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="CMSIS/Driver/GPIO_STM32.h"/>
+        <file category="source" name="CMSIS/Driver/GPIO_STM32.c"/>
+      </files>
+    </component>
     <component Cclass="CMSIS Driver" Cgroup="Ethernet MAC" Capiversion="2.1.0" Cversion="1.7.0" condition="STM32H7 CMSIS CubeMX">
       <description>Ethernet MAC Driver for STM32H7 Series</description>
       <RTE_Components_h>
