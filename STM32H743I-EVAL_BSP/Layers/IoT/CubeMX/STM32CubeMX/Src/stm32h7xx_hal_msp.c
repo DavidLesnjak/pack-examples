@@ -946,7 +946,20 @@ void HAL_PCD_MspInit(PCD_HandleTypeDef* hpcd)
 
   /* USER CODE END USB_OTG_FS_MspInit 1 */
   }
-  else if(hpcd->Instance==USB_OTG_HS)
+
+}
+
+/**
+* @brief HCD MSP Initialization
+* This function configures the hardware resources used in this example
+* @param hhcd: HCD handle pointer
+* @retval None
+*/
+void HAL_HCD_MspInit(HCD_HandleTypeDef* hhcd)
+{
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
+  if(hhcd->Instance==USB_OTG_HS)
   {
   /* USER CODE BEGIN USB_OTG_HS_MspInit 0 */
 
@@ -1058,7 +1071,18 @@ void HAL_PCD_MspDeInit(PCD_HandleTypeDef* hpcd)
 
   /* USER CODE END USB_OTG_FS_MspDeInit 1 */
   }
-  else if(hpcd->Instance==USB_OTG_HS)
+
+}
+
+/**
+* @brief HCD MSP De-Initialization
+* This function freeze the hardware resources used in this example
+* @param hhcd: HCD handle pointer
+* @retval None
+*/
+void HAL_HCD_MspDeInit(HCD_HandleTypeDef* hhcd)
+{
+  if(hhcd->Instance==USB_OTG_HS)
   {
   /* USER CODE BEGIN USB_OTG_HS_MspDeInit 0 */
 

@@ -1,6 +1,6 @@
 /******************************************************************************
  * File Name   : MX_Device.h
- * Date        : 29/03/2024 10:04:31
+ * Date        : 30/05/2024 09:20:10
  * Description : STM32Cube MX parameter definitions
  * Note        : This file is generated with a generator out of the
  *               STM32CubeMX project and its generated files (DO NOT EDIT!)
@@ -255,8 +255,8 @@
 #define MX_USB_OTG_FS_HANDLE                    hpcd_USB_OTG_FS
 
 /* Virtual mode */
-#define MX_USB_OTG_FS_VM                        Device
-#define MX_USB_OTG_FS_DEVICE                    1
+#define MX_USB_OTG_FS_VM                        Device_Only
+#define MX_USB_OTG_FS_Device_Only               1
 
 /* Pins */
 
@@ -290,12 +290,9 @@
 /*------------------------------ USB_OTG_HS     -----------------------------*/
 #define MX_USB_OTG_HS                           1
 
-/* Handle */
-#define MX_USB_OTG_HS_HANDLE                    hpcd_USB_OTG_HS
-
 /* Virtual mode */
-#define MX_USB_OTG_HS_VM                        Device
-#define MX_USB_OTG_HS_DEVICE                    1
+#define MX_USB_OTG_HS_VM                        Host_HS
+#define MX_USB_OTG_HS_Host_HS                   1
 
 /* Pins */
 
