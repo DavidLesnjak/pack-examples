@@ -17,8 +17,8 @@
  * limitations under the License.
  *
  *
- * $Date:        24. June 2022
- * $Revision:    V1.0
+ * $Date:        30. May 2024
+ * $Revision:    V1.1
  *
  * Project:      OTG Driver Header for STMicroelectronics STM32H7xx
  * -------------------------------------------------------------------------- */
@@ -31,6 +31,16 @@
 #include "MX_Device.h"
 
 // OTG_FS (OTG_HS2)
+#if  defined(MX_USB_OTG_FS_VM)
+  #define MX_USB_OTG_FS
+#endif
+#if  defined(MX_USB_OTG_FS_Device_Only)
+  #define MX_USB_OTG_FS_DEVICE
+#endif
+#if  defined(MX_USB_OTG_FS_Host_FS)
+  #define MX_USB_OTG_FS_HOST
+#endif
+
 #if  defined(MX_USB_OTG_FS)
   #define OTG_FS_USED             1
 #else
@@ -50,6 +60,16 @@
 #endif
 
 // OTG_HS (OTG_HS1)
+#if  defined(MX_USB_OTG_HS_VM)
+  #define MX_USB_OTG_HS
+#endif
+#if  defined(MX_USB_OTG_HS_Device_Only)
+  #define MX_USB_OTG_HS_DEVICE
+#endif
+#if  defined(MX_USB_OTG_HS_Host_HS)
+  #define MX_USB_OTG_HS_HOST
+#endif
+
 #if  defined(MX_USB_OTG_HS)
   #define OTG_HS_USED             1
 #else

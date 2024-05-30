@@ -28,6 +28,9 @@
       - Remove compile device header from device description
       - Remove not used conditions
       - Use permalinks for documentation
+      CMSIS-Driver:
+      - USBD: Added support for new MX_device.h (new CMSIS-Toolbox CubeMX integration)
+      - USBH: Added support for new MX_device.h (new CMSIS-Toolbox CubeMX integration)
     </release>
     <release version="3.1.1" date="2023-07-04">
       Board Support:
@@ -3560,7 +3563,7 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <file category="source" name="CMSIS/Driver/SmartCard_STM32H7xx.c"/>
       </files>
     </component>
-    <component Cclass="CMSIS Driver" Cgroup="USB Device"   Capiversion="2.1.0" Cversion="1.6.0" condition="STM32H7 CMSIS CubeMX">
+    <component Cclass="CMSIS Driver" Cgroup="USB Device"   Capiversion="2.1.0" Cversion="1.7.0" condition="STM32H7 CMSIS CubeMX">
       <description>USB Device Driver for STM32H7 Series</description>
       <RTE_Components_h>
         #define RTE_Drivers_USBD0               /* Driver USBD0 */
@@ -3571,7 +3574,7 @@ The STM32H7 series remains more than ever the microcontroller with an embedded F
         <file category="source" name="CMSIS/Driver/USBD_STM32H7xx.c"/>
       </files>
     </component>
-    <component Cclass="CMSIS Driver" Cgroup="USB Host"     Capiversion="2.1.0" Cversion="1.3.0" condition="STM32H7 CMSIS CubeMX">
+    <component Cclass="CMSIS Driver" Cgroup="USB Host"     Capiversion="2.1.0" Cversion="1.4.0" condition="STM32H7 CMSIS CubeMX">
       <description>USB Host Driver for STM32H7 Series</description>
       <RTE_Components_h>
         #define RTE_Drivers_USBH0               /* Driver USBH0 */

@@ -17,18 +17,22 @@
  * limitations under the License.
  *
  *
- * $Date:        24. June 2022
- * $Revision:    V1.1
+ * $Date:        30. May 2015
+ * $Revision:    V1.2
  *
  * Project:      OTG Common Driver for STMicroelectronics STM32H7xx
  * -------------------------------------------------------------------------- */
 
 /* History:
+ *  Version 1.2
+ *    Added support for new MX_device.h (new CMSIS-Toolbox CubeMX integration)
  *  Version 1.1
  *    Removed include of stm32h7xx_hal_pcd.h header
  *  Version 1.0
  *    Initial release
  */
+
+#include "cmsis_compiler.h"
 
 #include "OTG_STM32H7xx.h"
 
@@ -39,6 +43,14 @@
 
 #include "USBH_HS1_STM32H7xx.h"
 #include "USBH_HS2_STM32H7xx.h"
+
+// Local weak functions 
+// these get replaced by handlers from USBH module respectively
+__WEAK void USBH_HS1_IRQ (uint32_t gintsts) {}
+__WEAK void USBH_HS2_IRQ (uint32_t gintsts) {}
+
+// these get replaced by handlers PCD HAL driver
+__WEAK void HAL_PCD_IRQHandler(PCD_HandleTypeDef *hpcd);
 
 
 #if   (OTG_FS_DEVICE_USED == 1) || (OTG_HS_DEVICE_USED == 1)
