@@ -1,5 +1,5 @@
 generator-import:
-  for-device: STMicroelectronics::STM32H743XIHx
+  for-device: STM32H743XIHx
   for-board: STM32H743I-EVAL
   define:
     - USE_HAL_DRIVER
@@ -9,7 +9,7 @@ generator-import:
     - ./STM32CubeMX/Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
     - ./STM32CubeMX/Drivers/CMSIS/Device/ST/STM32H7xx/Include
     - ./STM32CubeMX/Inc
-    - ./MX_Device/Board
+    - ./MX_Device
   groups:
     - group: CubeMX
       files:
