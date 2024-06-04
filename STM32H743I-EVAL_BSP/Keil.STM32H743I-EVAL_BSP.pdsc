@@ -116,4 +116,14 @@
       <debugProbe connector="Micro-USB" debugClock="10000000" debugLink="swd" name="ST-Link"/>
     </board>
   </boards>
+
+  <examples>
+    <example name="Blinky" folder="Examples/Blinky" doc="README.md">
+      <description>CMSIS-RTOS2 Blinky example with VIO</description>
+      <board name="STM32H743I-EVAL" vendor="STMicroelectronics"/>
+      <project>
+        <environment name="csolution" load="Blinky.csolution.yml"/>
+      </project>
+    </example>
+  </examples>
 </package>
